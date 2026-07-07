@@ -26,6 +26,7 @@ The backend is built with **FastAPI**, serving a clean Glassmorphism UI through 
    ```
 3. **Set your API Key:**
    Set your Google Gemini API key as an environment variable to ensure security.
+
    Windows (CMD):
    ```bash
    set GEMINI_API_KEY=your_api_key_here
