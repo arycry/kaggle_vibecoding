@@ -26,11 +26,19 @@ The backend is built with **FastAPI**, serving a clean Glassmorphism UI through 
    ```
 3. **Set your API Key:**
    Set your Google Gemini API key as an environment variable to ensure security.
-   Windows (CMD): set GEMINI_API_KEY= ```bash your_api_key_here ```
+   Windows (CMD):
+   ```bash
+   set GEMINI_API_KEY=your_api_key_here
+   ```
+   Windows (PowerShell):
+   ```bash
+   $env:GEMINI_API_KEY=  "your_api_key_here"
+   ```
    
-   Windows (PowerShell): $env:GEMINI_API_KEY= ```bash "your_api_key_here" ```
-   
-   Mac/Linux: export GEMINI_API_KEY= ```bash"your_api_key_here" ```
+   Mac/Linux:
+   ```bash
+   export GEMINI_API_KEY= "your_api_key_here"
+   ```
 
 5. Running the Application
    Start the FastAPI server using Uvicorn:
