@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "Downtown Food Bank",
+    "accepted_food_type": "raw",
+    "distance_km": 2.5
+  },
+  {
+    "id": 2,
+    "name": "Community Soup Kitchen",
+    "accepted_food_type": "cooked",
+    "distance_km": 1.2
+  },
+  {
+    "id": 3,
+    "name": "City Rescue Mission",
+    "accepted_food_type": "cooked",
+    "distance_km": 4.0
+  },
+  {
+    "id": 4,
+    "name": "Neighborhood Pantry",
+    "accepted_food_type": "raw",
+    "distance_km": 3.8
+  },
+  {
+    "id": 5,
+    "name": "Veterans Shelter",
+    "accepted_food_type": "cooked",
+    "distance_km": 5.1
+  }
+]

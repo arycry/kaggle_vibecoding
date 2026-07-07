@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P.L.A.T.E. - Predictive Logistics Agent for Triage & Edibles</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="background-orbs">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+
+    <main class="container">
+        <header class="glass-header">
+            <div class="logo">
+                <span class="logo-icon">🍽️</span>
+                <h1>P.L.A.T.E.</h1>
+            </div>
+            <p class="subtitle">Predictive Logistics Agent for Triage & Edibles</p>
+            <div class="badge">Agents for Good</div>
+        </header>
+
+        <section class="glass-card input-section">
+            <h2>Donate Leftover Food</h2>
+            <p>Tell our agents what food you have left over, and they will coordinate the logistics with local charities instantly.</p>
+            
+            <form id="donation-form">
+                <div class="input-wrapper">
+                    <textarea id="food-input" placeholder="e.g., We have 70 portions of chicken noodles, still in great condition..." required></textarea>
+                </div>
+                <button type="submit" id="submit-btn" class="glow-on-hover">
+                    <span class="btn-text">Find Charities</span>
+                    <span class="loader hidden"></span>
+                </button>
+            </form>
+        </section>
+
+        <section id="workflow-section" class="workflow-container hidden">
+            <!-- Agent 1 Tracker -->
+            <div class="agent-step glass-card" id="step-triage">
+                <div class="step-header">
+                    <div class="step-icon">🤖</div>
+                    <h3>Triage Agent</h3>
+                    <div class="status-badge" id="status-triage">Waiting...</div>
+                </div>
+                <div class="step-content">
+                    <p class="processing-text" id="triage-log">Waiting for input...</p>
+                    <div class="result-highlight hidden" id="triage-result"></div>
+                </div>
+            </div>
+
+            <!-- Connector -->
+            <div class="step-connector"></div>
+
+            <!-- Agent 2 Tracker -->
+            <div class="agent-step glass-card" id="step-logistics">
+                <div class="step-header">
+                    <div class="step-icon">🚚</div>
+                    <h3>Logistics Agent</h3>
+                    <div class="status-badge" id="status-logistics">Waiting...</div>
+                </div>
+                <div class="step-content">
+                    <p class="processing-text" id="logistics-log">Waiting for classification...</p>
+                    <div class="plan-result hidden" id="logistics-result"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>
