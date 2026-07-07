@@ -22,6 +22,7 @@ The backend is built with **FastAPI**, serving a clean Glassmorphism UI through 
 2. **Install dependencies:**
   ```bash
   pip install -r requirements.txt
+
 3. **Set your API Key:**
 Set your Google Gemini API key as an environment variable to ensure security.
 Windows (CMD): set GEMINI_API_KEY=your_api_key_here
