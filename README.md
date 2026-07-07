@@ -19,18 +19,19 @@ The backend is built with **FastAPI**, serving a clean Glassmorphism UI through 
 1. **Clone the repository:**
    ```bash
    git clone https://github.com/arycry/kaggle_vibecoding
+   ```
 2. **Install dependencies:**
-  ```bash
-  pip install -r requirements.txt
-
+   ```bash
+   pip install -r requirements.txt
+   ```
 3. **Set your API Key:**
-Set your Google Gemini API key as an environment variable to ensure security.
-Windows (CMD): set GEMINI_API_KEY=your_api_key_here
-Windows (PowerShell): $env:GEMINI_API_KEY="your_api_key_here"
-Mac/Linux: export GEMINI_API_KEY="your_api_key_here"
+   Set your Google Gemini API key as an environment variable to ensure security.
+   Windows (CMD): set GEMINI_API_KEY=your_api_key_here
+   Windows (PowerShell): $env:GEMINI_API_KEY="your_api_key_here"
+   Mac/Linux: export GEMINI_API_KEY="your_api_key_here"
 
 4. Running the Application
-Start the FastAPI server using Uvicorn:
-```bash
-uvicorn main:app --reload
-Once the server is running, open your browser and navigate to http://127.0.0.1:8000 to interact with the P.L.A.T.E. web interface.
+   Start the FastAPI server using Uvicorn:
+   ```bash
+   uvicorn main:app --reload
+   Once the server is running, open your browser and navigate to http://127.0.0.1:8000 to interact with the P.L.A.T.E. web interface.
